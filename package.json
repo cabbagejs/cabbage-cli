@@ -10,12 +10,19 @@
     "name": "Justin Searls",
     "email": "justin@testdouble.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cabbagejs/cabbage-cli.git"
+  },
   "license": "MIT",
   "keywords": [
     "broccoli",
     "happiness"
   ],
   "dependencies": {
-    "resolve": "~1.0.0"
+    "coffee-script": "^1.8.0",
+    "resolve": "^1.0.0",
+    "rimraf": "^2.2.8",
+    "which": "^1.0.8"
   }
 }
