@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+process.title = 'cabbage';
+require(require('resolve').sync('cabbage', { basedir: process.cwd() })).cli();

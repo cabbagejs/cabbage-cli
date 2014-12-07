@@ -1,0 +1,21 @@
+{
+  "name": "cabbage-cli",
+  "version": "0.0.1",
+  "description": "Globally install cabbage-cli with `npm i -g cabbage-cli`",
+  "main": "index.js",
+  "bin": {
+    "cabbage": "bin/cabbage"
+  },
+  "author": {
+    "name": "Justin Searls",
+    "email": "justin@testdouble.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "broccoli",
+    "happiness"
+  ],
+  "dependencies": {
+    "resolve": "~1.0.0"
+  }
+}
