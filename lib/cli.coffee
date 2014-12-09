@@ -17,6 +17,16 @@ deferToFullCabbage = ->
     cabbagePath = resolve.sync('cabbage', basedir: process.cwd())
     require(cabbagePath).cli()
   catch e
-    console.error("No `cabbage` module found. Are you sure you're running from a directory with cabbage installed?")
-    console.error(e.stack)
+    if e.message.indexOf("Cannot find module 'cabbage'") > -1
+      console.error """
+
+        No `cabbage` module found. Are you sure you're running from a project directory with cabbage installed?
+
+        To create a new project, run:
+
+          $ cabbage new <project_name>
+
+      """
+    else
+      console.error(e.stack)
     process.exit(1);
