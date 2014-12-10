@@ -1,6 +1,6 @@
 {
   "name": "cabbage-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Globally install cabbage-cli with `npm i -g cabbage-cli`",
   "main": "index.js",
   "bin": {
